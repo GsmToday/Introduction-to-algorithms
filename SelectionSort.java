@@ -18,6 +18,7 @@ public class SelectionSort {
 			//find min
 			int min = arraytoSort[i];
 			int temp;
+			//为了防止数组出界，j= i+1
 			for(int j = i+1; j<arraytoSort.length ;j++){
 				if(arraytoSort[j-1] > arraytoSort[j]){
 					min = arraytoSort[j];
