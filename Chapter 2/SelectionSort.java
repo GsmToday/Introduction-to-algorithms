@@ -15,19 +15,20 @@ public class SelectionSort {
 	public void sort(){
 		
 		for(int i = 0; i<arraytoSort.length; i++){
-			//find min
-			int min = arraytoSort[i];
+			//找到min的index
+			int min = i;
 			int temp;
 			//为了防止数组出界，j= i+1
 			for(int j = i+1; j<arraytoSort.length ;j++){
-				if(arraytoSort[j-1] > arraytoSort[j]){
-					min = arraytoSort[j];
+				if(arraytoSort[j] <arraytoSort[min]){
+					min = j;
 					}
 			}
 			//swap the min with the ith element
-			temp = min;
-			min = arraytoSort[i];
+			temp = arraytoSort[min];
+			arraytoSort[min] = arraytoSort[i];
 			arraytoSort[i] = temp;
+
 		}
 	}
 	// To show
@@ -37,8 +38,8 @@ public class SelectionSort {
 	}
 	
 	public static void main(String[] args) {
-		int a[] ={500,2,4,6,1,3};
-		InsertionSort i = new InsertionSort(a);
+		int a[] ={1,-1,2,4,6,3};
+		SelectionSort i = new SelectionSort(a);
 		i.sort();
 		i.show();
 	}
