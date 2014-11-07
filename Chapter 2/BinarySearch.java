@@ -1,5 +1,5 @@
 /**
- * Binary Sort - non recursively
+ * Binary Sort - recursively
  * Chapter 2 in Introduction to Algorithms
  * by GSM 2014-11-7
  */
