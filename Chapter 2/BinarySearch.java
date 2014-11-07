@@ -1,3 +1,8 @@
+/**
+ * Binary Sort - non recursively
+ * Chapter 2 in Introduction to Algorithms
+ * by GSM 2014-11-7
+ */
 package preliminary;
 
 public class BinarySearch {
@@ -39,6 +44,6 @@ public class BinarySearch {
 		//InsertionSort i = new InsertionSort(a);
 		BinarySearch e = new BinarySearch(a,4);
 		//e.toSort();
-		System.out.print(e.search(0,a.length));
+		System.out.print(e.search(0,a.length-1));
 		}
 }
